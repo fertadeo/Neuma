@@ -4,13 +4,10 @@ import { Navbar } from './Navbar';
 
 
 export const Home = () => {
-  return <div>
+  return (<div>
        <Navbar />
 
-       <Link to='/cursos'>
-       
-       <button> Ir a cursos </button>
-       </Link>
-  </div>
+
+  </div>)
 };
 

@@ -4,7 +4,7 @@ import { Navbar } from './Navbar';
 
 
 export const Cursos = () => {
-  return <div>
+  return (<div>
     <Navbar/>
       Desde Cursos
      <Link to='/'>
@@ -14,5 +14,5 @@ export const Cursos = () => {
      <Link to='/cursos/piano'>
         <button> Ir a Piano  </button>
      </Link>
-  </div>
+  </div>)
 };
