@@ -4,7 +4,7 @@ import { Cursos } from './components/Cursos';
 import { Piano } from './components/cursos/Piano';
 import { Home } from './components/Home';
 
-
+import style from '../src/myapp.module.css';
 
 
  const MyApp = () => {
