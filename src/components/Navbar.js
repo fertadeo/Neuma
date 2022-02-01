@@ -2,9 +2,6 @@ import React from 'react';
 import {AppBar, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
-import { green } from '@mui/material/colors';
-
-import style from './navbar.module.css'
 
 
 
@@ -77,7 +74,7 @@ export const Navbar = () => {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { 
-                  xs: 'flex', md: 'none', backgroundColor: 'green'
+                  xs: 'flex', md: 'none',
                 },
               }}
             >
@@ -110,7 +107,7 @@ export const Navbar = () => {
                 Neuma
               </Link>
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: { xs: 'none', md: 'flex-end' }  }}>
             {pages.map((page) => (
               <Button
                 key={page} 
