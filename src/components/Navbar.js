@@ -1,7 +1,10 @@
 import React from 'react';
-import {AppBar, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Tooltip, Typography} from '@mui/material';
+import {AppBar, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
+import { green } from '@mui/material/colors';
+
+import style from './navbar.module.css'
 
 
 
@@ -30,7 +33,8 @@ export const Navbar = () => {
 //   };
 
   return (
-       <AppBar position="static">
+                        ///// APP BAR //////
+       <AppBar position="static" className="appBar">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -39,8 +43,10 @@ export const Navbar = () => {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-              <Link to='/'>
-            Neuma
+              <Link
+                to='/'
+                style={{textDecoration: 'none', color: 'white'}}>
+                Neuma
               </Link>
           </Typography>
 
@@ -70,34 +76,52 @@ export const Navbar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { 
+                  xs: 'flex', md: 'none', backgroundColor: 'green'
+                },
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"> <Link to= {`${page}`}> {page} </Link>  </Typography>
+                <MenuItem 
+                key={ page } 
+                onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center"> 
+                    <Link 
+                      to={`/${ page }`}
+                      style={{textDecoration: 'none', color: 'black'}}
+                    > 
+                      { page } 
+                    </Link>  
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
+          {/* Mobile AppBar */}
           <Typography
-            variant="h6"
+            variant="h4"
             noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
+            component="div" m={0}
+            sx={{ flexGrow: 1 , display: { xs: 'flex', md: 'none' } }}
           >
-              <Link to='/'>
+              <Link
+              to='/' 
+              style={{textDecoration: 'none', color: 'white'}}>
                 Neuma
               </Link>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page}
+                key={page} 
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-               <Link to= {`${page}`} > {page} </Link> 
+               <Link 
+               to= {`/${page}`}
+               style={{textDecoration: 'none', color: 'white'}}> 
+               { page } 
+               </Link> 
               </Button>
             ))}
           </Box>
