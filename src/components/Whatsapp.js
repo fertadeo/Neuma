@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Button = styled.a`
     width: 55px;
     height: 55px;
-    position: fixed;
+    position: absolute;
     bottom: 4rem;
     right: 4rem;
     background-color: green;
@@ -19,11 +19,12 @@ const Button = styled.a`
     cursor: pointer;
     opacity:.7;
     z-index:110;
+    transition: 1s;
     &:hover{
         background-color: white;
         color: green;
         border: 1px solid white;
-
+        
         
     }
 `;
@@ -34,7 +35,7 @@ const Whatsapp = () => {
     return (
          
             <Button 
-                href="https://wa.me/+5493517025133?text=Quiero%20recibir%20informacion%20de%20las%20fundas"
+                href="https://wa.me/+5493541222719?text=Quiero%20recibir%20informacion%20de%20las%20fundas"
                 target="_blank"
                 
             ><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" className="bi bi-whatsapp" viewBox="0 0 16 16">

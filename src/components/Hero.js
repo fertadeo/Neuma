@@ -1,6 +1,7 @@
 import React from 'react';
 import { Paper, Grid, Button } from '@mui/material';
 import  neuma  from '../../src/img/neuma.png';
+import Whatsapp from './Whatsapp';
 
 
 
@@ -34,6 +35,7 @@ export const Hero = () => {
 
         <Button variant='contained' style={{color: 'white'}} > Cursos </Button>
         <Button variant='contained' style={{color: 'white'}} > Eventos </Button>
+        <Whatsapp />
       </div>
 
     </div>
