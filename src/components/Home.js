@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar } from './Navbar';
 import { Hero } from './Hero'
 import { Info } from './Info';
+import { Cursos } from './Cursos';
 
 
 export const Home = () => {
@@ -10,6 +11,7 @@ export const Home = () => {
     <Navbar />
     <Hero />
     <Info />
+    <Cursos />
   </>
   )
 };

@@ -1,12 +1,11 @@
 import React from 'react';
 import { Grid } from '@mui/material';
-import ComputerIcon from '@mui/icons-material/Computer';
-import EmailIcon from '@mui/icons-material/Email';
-import StayCurrentLandscapeIcon from '@mui/icons-material/StayCurrentLandscape';
-import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
-import DuoIcon from '@mui/icons-material/Duo';
-import SendIcon from '@mui/icons-material/Send';
-
+import icon1 from '../img/icon1.png';
+import icon2 from '../img/icon2.png';
+import icon3 from '../img/icon3.png';
+import icon4 from '../img/icon4.png';
+import icon5 from '../img/icon5.png';
+import icon6 from '../img/icon6.png';
 
 
 
@@ -14,28 +13,28 @@ import SendIcon from '@mui/icons-material/Send';
 const infoIcon = [
     {
         id: 1, 
-        icon: 'AccountBalanceIcon' ,
+        icon: icon1 ,
         title: 'Estudia de manera online'
     },
     {
         id: 2, 
-        icon:  'ComputerIcon',
+        icon:  icon2,
         title: 'Elegí el curso que más te guste'
     },{
         id: 3, 
-        icon:  'EmailIcon',
+        icon:  icon3,
         title: 'Registra tus datos vía mail'
     },{
         id: 4, 
-        icon:  'StayCurrentLandscapeIcon',
+        icon:  icon4,
         title: 'Accedé al curso en el momento que quieras'
     },{
         id: 5, 
-        icon:  'DuoIcon',
+        icon:  icon5,
         title: 'Si tu curso es online en vivo, recibirás el link de la clase'
     },{
         id: 6, 
-        icon:  'SendIcon',
+        icon:  icon6,
         title: 'Al terminar el curso, se emitirá un certificado a tu nombre'
     },
 ]
@@ -50,14 +49,18 @@ export const Info = () => {
                 
                 return (
                     <Grid 
-                    style={{justifyContent:'center'}}
                     xs={4}
                     item
                     key={info.id}
                     >
-                        <div>
-                            <div>{info.icon}</div>
-                            <div>{info.title}</div>
+                        <div
+                        style={{display: 'flex', flexDirection:'column', justifyContent:'center', alignItems: 'center', padding:'3rem'}}>
+                            <img 
+                                src={info.icon} 
+                                alt='icons'
+                                style={{width:'50%'}}
+                            ></img>
+                            <h2 style={{textTransform:'uppercase', fontSize: '20px', textAlign:'center'}}>{info.title}</h2>
                         </div>
                     </Grid>
                 )
