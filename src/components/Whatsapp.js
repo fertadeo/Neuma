@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Button = styled.a`
     width: 55px;
     height: 55px;
-    position: absolute;
+    
     bottom: 4rem;
     right: 4rem;
     background-color: green;

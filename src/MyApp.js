@@ -19,18 +19,15 @@ const theme = createTheme({
 const MyApp = () => {
   return ( 
   <ThemeProvider theme={theme}>  
-  
     <BrowserRouter >
       <Routes >
         <Route path='/'element={<Home/>} />
         <Route path='/cursos'element={<Cursos/>} />
         <Route path='/cursos/piano'element={<Piano/>} />
       </Routes>
-  
     </BrowserRouter>
-    
   </ThemeProvider>
-    )
+  )
 }
 
 export default MyApp;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Paper } from '@mui/material';
+import { Grid } from '@mui/material';
 import ComputerIcon from '@mui/icons-material/Computer';
 import EmailIcon from '@mui/icons-material/Email';
 import StayCurrentLandscapeIcon from '@mui/icons-material/StayCurrentLandscape';
@@ -14,7 +14,7 @@ import SendIcon from '@mui/icons-material/Send';
 const infoIcon = [
     {
         id: 1, 
-        icon:  'AccountBalanceIcon',
+        icon: 'AccountBalanceIcon' ,
         title: 'Estudia de manera online'
     },
     {
@@ -41,40 +41,26 @@ const infoIcon = [
 ]
 
 export const Info = () => {
-    
-
-    
     return (
-      <Paper style={{height: '100vh'}}>
-          <Grid container>
-           {   infoIcon.map(info => {
-               return (
-
-                  <Grid 
-                  style={{ height: '30vh' }}
-                  xs={2}
-                  item
-                  key={info.id}>
-                 
-                 <div>
-                     {info.icon}
-                     {info.title}
-                 </div>
-                 
-  
-  
-                </Grid>
-
-               )
-                  
-              })}
-
-
-           
-          </Grid>
-         
-    
-      </Paper>
-
-
+        <Grid 
+            container
+            style={{ height: '500px' }}
+        >
+            {infoIcon.map(info => {
+                
+                return (
+                    <Grid 
+                    style={{justifyContent:'center'}}
+                    xs={4}
+                    item
+                    key={info.id}
+                    >
+                        <div>
+                            <div>{info.icon}</div>
+                            <div>{info.title}</div>
+                        </div>
+                    </Grid>
+                )
+            })}
+        </Grid>
 )}

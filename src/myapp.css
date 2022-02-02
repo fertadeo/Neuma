@@ -3,22 +3,6 @@ html, body{
     padding: 0;
     font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
-    overflow: hidden;
-}
-
-
-.hero-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-}
-
-.hero-buttons{
-    display: flex;
-    margin-top: 1.5rem;
-    gap: 2rem;
     
-
+    height: auto;
 }
