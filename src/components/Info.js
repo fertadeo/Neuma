@@ -43,7 +43,7 @@ export const Info = () => {
     return (
         <Grid 
             container
-            style={{ height: '500px' }}
+            
         >
             {infoIcon.map(info => {
                 
