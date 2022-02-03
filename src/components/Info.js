@@ -43,7 +43,7 @@ export const Info = () => {
     return (
         <Grid 
             container
-            style={{ height: '500px' }}
+            
         >
             {infoIcon.map(info => {
                 
@@ -58,7 +58,7 @@ export const Info = () => {
                             <img 
                                 src={info.icon} 
                                 alt='icons'
-                                style={{width:'50%'}}
+                                style={{width:'30%'}}
                             ></img>
                             <h2 style={{textTransform:'uppercase', fontSize: '20px', textAlign:'center'}}>{info.title}</h2>
                         </div>
