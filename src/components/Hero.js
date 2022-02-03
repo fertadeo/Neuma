@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
   
     <div> 
-      <Grid container>
+      <Grid container style={{marginTop:'60px'}}>
         <Grid 
           xs={6} 
           item>
