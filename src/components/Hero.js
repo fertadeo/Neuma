@@ -1,7 +1,9 @@
 import React from 'react';
 import {Grid, Button, Box } from '@mui/material';
 import  neuma  from '../../src/img/neuma.png';
+import circle from '../../src/img/circle.png';
 import Whatsapp from './Whatsapp';
+
 
 export const Hero = () => {
   return (
@@ -11,7 +13,12 @@ export const Hero = () => {
         <Grid 
           xs={6} 
           item>
-          <Box>
+          <Box className='circle-container'>
+            <img
+              src={circle}
+              className="circle"
+              alt='circle transition'
+            />
             <img 
               src={neuma} 
               style={{width: '50vw', padding: 50}}
