@@ -33,7 +33,7 @@ export const Navbar = (props) => {
   return (
     <>
       <CssBaseline />
-        <HideOnScroll {...props}>
+        <HideOnScroll {...props} style={{fontFamily:'Nunito, sans-serif'}}>
           <AppBar className="appBar">
             <Container maxWidth="xl">
               <Toolbar disableGutters>
@@ -45,7 +45,7 @@ export const Navbar = (props) => {
                 >
                   <Link
                     to='/'
-                    style={{textDecoration: 'none', color: 'white'}}>
+                    style={{textDecoration: 'none', color: 'white', fontSize:'25px'}}>
                     Neuma
                   </Link>
                 </Typography>
