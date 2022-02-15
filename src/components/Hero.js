@@ -14,7 +14,7 @@ export const Hero = () => {
           <Box>
             <img 
               src={neuma} 
-              style={{width: '30vw', padding: 50}}
+              style={{width: '50vw', padding: 50}}
               alt='imagenNeuma'
             ></img>
           </Box>
