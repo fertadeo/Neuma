@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Cursos } from './components/Cursos';
+import { Services } from './components/Services';
 import { Piano } from './components/cursos/Piano';
 import { Home } from './components/Home';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -22,7 +22,7 @@ const MyApp = () => {
     <BrowserRouter >
       <Routes >
         <Route path='/'element={<Home/>} />
-        <Route path='/cursos'element={<Cursos/>} />
+        <Route path='/cursos'element={<Services/>} />
         <Route path='/cursos/piano'element={<Piano/>} />
       </Routes>
     </BrowserRouter>

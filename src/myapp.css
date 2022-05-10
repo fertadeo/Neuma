@@ -10,12 +10,12 @@ html, body{
     font-size: 17px !important;
 }
 .circle{
-    width:50%;
+    width:45%;
     position: absolute;
     left: 0rem;
-    top: 4rem;
+    top: 2rem;
     z-index: -1;
-    transition: all ease-in-out, 2s;
+    transition: all ease-in-out, 2.5s;
 }
 .circle-container:hover .circle{
     left: 20rem;

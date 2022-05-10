@@ -21,7 +21,7 @@ export const Hero = () => {
             />
             <img 
               src={neuma} 
-              style={{width: '50vw', padding: 50}}
+              style={{width: '45vw', padding: 50}}
               alt='imagenNeuma'
             ></img>
           </Box>
@@ -31,22 +31,25 @@ export const Hero = () => {
           item
           styled={{justifyContent: 'center'}}
         >
-          <Box style={{height:'490px', display:'flex', flexDirection:'column', justifyContent:'center'}}>
+          <Box style={{height:'490px', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
             <h1> INICIA TU NUEVO CAMINO  </h1>
-            <h3> Somos expertos en educación Holística y Musical </h3>
-          <Box style={{display:'flex', flexDirection:'row', justifyContent:'center', gap:'30px'}}>
-            <Button 
+            <h2> Somos expertos en educación Holística y Musical </h2>
+          <Box style={{display:'flex', flexDirection:'row', justifyContent:'center', gap:'100px'}}>
+            {/* <Button 
               variant='contained' 
               style={{color: 'white'}} 
                 >Cursos
-            </Button>
-            <Button 
+            </Button> */}
+            {/* <Button 
               variant='contained' 
               style={{color: 'white'}} 
                 >Eventos
-            </Button>
-            <Whatsapp />
+            </Button> */}
           </Box>
+          </Box>
+          <Box style={{display: 'flex', justifyContent: 'flex-end', paddingRight: '5rem'}}>
+              <Whatsapp />
+
           </Box>
         </Grid>
       </Grid>
