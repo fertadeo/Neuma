@@ -4,6 +4,7 @@ import { Services } from './components/Services';
 import { Piano } from './components/cursos/Piano';
 import { Home } from './components/Home';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import FloresDeBach from './components/cursos/FloresDeBach';
 import  '../src/myapp.css';
 
 
@@ -24,6 +25,7 @@ const MyApp = () => {
         <Route path='/'element={<Home/>} />
         <Route path='/cursos'element={<Services/>} />
         <Route path='/cursos/piano'element={<Piano/>} />
+        <Route path='/cursos/floresdebach'element={<FloresDeBach/>} />
       </Routes>
     </BrowserRouter>
   </ThemeProvider>
