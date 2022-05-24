@@ -17,7 +17,7 @@ function HideOnScroll(props) {
 
 
   
- const pages = ['Cursos', 'Eventos', 'Contacto'];
+ const pages = ['Cursos', 'Eventos', 'Contacto', 'Quienes somos'];
 
 
 export const Navbar = (props) => {
