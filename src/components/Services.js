@@ -22,6 +22,7 @@ export const Services = () => {
       <img 
       style={{width:'33vw', height: '95vh', objectFit:'cover'}}
        src={meditation}
+       alt='meditation'
        className="meditation"
        >
       </img>
@@ -29,6 +30,7 @@ export const Services = () => {
       <img 
       style={{width:'32vw', height: '95vh'}}
        src={magicbowls}
+       alt='meditation'
        className="meditation"
        >
       </img>
@@ -36,6 +38,7 @@ export const Services = () => {
       <img 
       style={{width:'33vw', height: '95vh'}}
        src={pianist}
+       alt='meditation'
        className="meditation"
        >
       </img>
