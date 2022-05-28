@@ -35,16 +35,16 @@ export const Hero = () => {
             <h1> INICIA TU NUEVO CAMINO  </h1>
             <h2> Somos expertos en educación Holística y Musical </h2>
           <Box style={{display:'flex', flexDirection:'row', justifyContent:'center', gap:'100px'}}>
-            {/* <Button 
+             <Button 
               variant='contained' 
               style={{color: 'white'}} 
-                >Cursos
-            </Button> */}
-            {/* <Button 
+                > Neuma Cursos
+            </Button> 
+             <Button 
               variant='contained' 
               style={{color: 'white'}} 
-                >Eventos
-            </Button> */}
+                >Neuma Salud
+            </Button> 
           </Box>
           </Box>
           <Box style={{display: 'flex', justifyContent: 'flex-end', paddingRight: '5rem'}}>
