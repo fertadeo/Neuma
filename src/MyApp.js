@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Services } from './components/Services';
+import { Cursos } from './components/cursos/Cursos'
 import { Piano } from './components/cursos/Piano';
 import { Home } from './components/Home';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import FloresDeBach from './components/cursos/FloresDeBach';
 import  '../src/myapp.css';
+import { QuienesSomos } from './components/QuienesSomos';
 
 
 const theme = createTheme({
@@ -23,9 +24,10 @@ const MyApp = () => {
     <BrowserRouter >
       <Routes >
         <Route path='/'element={<Home/>} />
-        <Route path='/cursos'element={<Services/>} />
+        <Route path='/cursos'element={<Cursos/>} />
         <Route path='/cursos/piano'element={<Piano/>} />
         <Route path='/cursos/floresdebach'element={<FloresDeBach/>} />
+        <Route path='/Quienes%20somos'element={<QuienesSomos/>} />
       </Routes>
     </BrowserRouter>
   </ThemeProvider>

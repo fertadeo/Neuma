@@ -38,12 +38,12 @@ export const Hero = () => {
              <Button 
               variant='contained' 
               style={{color: 'white'}} 
-                >Cursos
+                > Neuma Cursos
             </Button> 
              <Button 
               variant='contained' 
               style={{color: 'white'}} 
-                >Eventos
+                >Neuma Salud
             </Button> 
           </Box>
           </Box>

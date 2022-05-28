@@ -3,7 +3,7 @@ import { Navbar } from './Navbar';
 import { Hero } from './Hero'
 import { Info } from './Info';
 import { Services } from './Services';
-import { Events } from './Events';
+// import { Events } from './Events';
 
 
 export const Home = () => {
@@ -13,7 +13,7 @@ export const Home = () => {
     <Hero />
     <Info />
     <Services />
-    <Events />
+    {/* <Events /> */}
   </>
   )
 };

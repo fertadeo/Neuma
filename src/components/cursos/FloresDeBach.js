@@ -83,7 +83,7 @@ export default function FloresDeBach() {
       style={{marginTop:'90px'}}
       >
         <Box 
-          style={{border:'blue solid 2px'}}
+          // style={{border:'blue solid 2px'}}
           item
           display='flex'
           justifyContent='space-around'
@@ -97,7 +97,7 @@ export default function FloresDeBach() {
             ></img>
         </Box>
         <Box 
-        style={{border:'red solid 2px'}}
+        // style={{border:'red solid 2px'}}
         item
         display='flex'
         justifyContent='center'

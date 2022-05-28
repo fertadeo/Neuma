@@ -35,7 +35,7 @@ const Whatsapp = () => {
     return (
          
             <Button 
-                href="https://wa.me/+5493518172903?text=Hola%20Neuma!%20Quiero%20recibir%20informacion%20sobre%20los%20cursos"
+                href="https://wa.me/+5493518172903?text=Hola%20Neuma!%20Quiero%20recibir%20información%20sobre%20los%20cursos"
                 target="_blank"
                 
             ><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-whatsapp" viewBox="0 0 16 16">
