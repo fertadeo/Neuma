@@ -103,6 +103,7 @@ export const Salud = () => {
                     <div>
 
                     <h2> {salud.speciality} </h2>
+                    <h3> {salud.name} </h3>
                     <p> {salud.title} </p>
                     </div>
                     <img 
