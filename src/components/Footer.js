@@ -1,17 +1,41 @@
-import { Grid } from '@mui/material'
 import React from 'react'
+import { Grid } from '@mui/material'
+import { Box, width } from '@mui/system'
+import Instagram from '../img/instagram.png'
+import { Link } from 'react-router-dom'
 
 
 export const Footer = () => {
   return (
     <div>
         <Grid className='footer-container'
-              container 
+              container
               xs={12}
-              direction='row'
-              style={{width:'100%', height:'20%', backgroundColor:'#20C0B9', marginTop:'20%' }}
+              style={{width:'100%', backgroundColor:'#20C0B9', display:'flex', alignItems:'center', justifyContent:'space-around', color:'white', fontSize:'1.3rem' }}
         >
-        <h1> Desde el footer! </h1>
+        
+        <Box 
+        item
+        style={{padding:'20px', }}
+        > 
+        <p > Neuma Espacio Holístico | 2022 </p>
+        
+        </Box>
+        <Box 
+        item
+        style={{padding:'20px', color:'black', fontSize:'1.3' }}
+        >
+          <p> Seguinos en</p>
+          <a href='https://www.instagram.com/neuma_holistico/' target='_blank'> 
+          <img 
+            src= { Instagram }
+            style={{width:'10%'}}
+            ></img>   
+          </a> 
+        
+        
+        
+        </Box>
 
 
         </Grid>

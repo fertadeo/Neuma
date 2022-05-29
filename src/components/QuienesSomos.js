@@ -3,6 +3,7 @@ import { Grid, Box } from '@mui/material'
 import { Navbar } from './Navbar'
 import YoutubeEmbed from "./YoutubeEmbed";
 import '../components/quienesSomos.module.css'
+import { Footer } from './Footer';
 
 export const QuienesSomos = () => {
     return (
@@ -39,6 +40,7 @@ export const QuienesSomos = () => {
 
 
             </Grid>
+            <Footer />
         </div>
     )
 }
