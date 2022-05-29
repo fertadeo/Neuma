@@ -6,6 +6,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import FloresDeBach from './components/cursos/FloresDeBach';
 import  '../src/myapp.css';
 import { QuienesSomos } from './components/QuienesSomos';
+import { Salud } from './components/Salud';
 
 
 const theme = createTheme({
@@ -26,6 +27,7 @@ const MyApp = () => {
         <Route path='/cursos'element={<Cursos/>} />
         <Route path='/cursos/floresdebach'element={<FloresDeBach/>} />
         <Route path='/Quienes%20somos'element={<QuienesSomos/>} />
+        <Route path='/Profesionales%20de%20Salud'element={<Salud/>} />
       </Routes>
     </BrowserRouter>
   </ThemeProvider>
