@@ -7,6 +7,7 @@ import Adriana from '../img/psico-adriana-tenorio.jpeg'
 import Irene from '../img/reiki-Irene-Siriczman.jpeg'
 import Alejandra from '../img/flores-maria-alejandra-petri.jpeg'
 import '../myapp.css'
+import { Footer } from './Footer'
 
 
 
@@ -99,7 +100,7 @@ export const Salud = () => {
                     <Card
                     elevation={6}
                     direction='row'
-                    style={{width:'100%', display:'flex', padding:'20px', justifyContent:'space-between', fontSize:'1.5rem'}}> 
+                    style={{width:'100%', display:'flex', padding:'10px', paddingLeft:'10%', justifyContent:'space-between', fontSize:'1.3rem'}}> 
                     <div>
 
                     <h2> {salud.speciality} </h2>
@@ -115,12 +116,14 @@ export const Salud = () => {
 
                 </Box>
 
+                
             </Grid>
+
                 )
 
             })}
             
-            
+            <Footer />
     </div>
   )
 }
