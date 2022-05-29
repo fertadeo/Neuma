@@ -1,8 +1,8 @@
 import { Grid } from '@mui/material';
 import React from 'react';
-import meditation from '../img/meditation.jpg';
-import magicbowls from '../img/magicbowls.jpg';
-import pianist from '../img/pianist.jpg';
+import meditation from '../img/meditation1.jpg';
+import magicbowls from '../img/magicbowls1.jpg';
+import pianist from '../img/pianist1.jpg';
 
 
 
@@ -36,7 +36,7 @@ export const Services = () => {
       </img>
 
       <img 
-      style={{width:'33vw', height: '95vh'}}
+      style={{width:'33%', height: '95vh'}}
        src={pianist}
        alt='meditation'
        className="meditation"

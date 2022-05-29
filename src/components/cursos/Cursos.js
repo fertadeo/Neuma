@@ -2,7 +2,7 @@ import React from 'react'
 import { Grid, Stack } from '@mui/material'
 import { Divider } from '@mui/material'
 import { Navbar } from '../Navbar'
-import Meditation from '../../img/meditation.jpg'
+import Meditation from '../../img/meditation1.jpg'
 import './cursos.module.css'
 
 export const Cursos = () => {
