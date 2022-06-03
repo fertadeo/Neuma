@@ -17,7 +17,7 @@ function HideOnScroll(props) {
 
 
   
- const pages = ['Cursos','Profesionales de Salud' , 'Quienes somos'];
+ const pages = [ 'Quienes somos', 'Cursos','Profesionales de Salud'];
 
 
 export const Navbar = (props) => {
@@ -38,7 +38,7 @@ export const Navbar = (props) => {
             <Container maxWidth="xl">
               <Toolbar disableGutters>
                 <Typography
-                  variant="h6"
+                  variant="h4"
                   noWrap
                   component="div"
                   sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
@@ -85,12 +85,15 @@ export const Navbar = (props) => {
                     >
                     {pages.map((page) => (
                       <MenuItem 
+                      style={{backgroundColor:'#20C0B9'}}
                       key={ page } 
                       onClick={handleCloseNavMenu}>
-                        <Typography textAlign="center"> 
+                        <Typography 
+                        textAlign="center"
+                        > 
                           <Link 
                             to={`/${ page }`}
-                            style={{textDecoration: 'none', color: 'black'}}
+                            style={{textDecoration: 'none', color: 'white'}}
                           > 
                             { page } 
                           </Link>  
@@ -125,7 +128,9 @@ export const Navbar = (props) => {
                     >
                     <Link 
                       to= {`/${page}`}
-                      style={{textDecoration: 'none', color: 'white'}}> 
+                      className='navbar-items'
+                      ////////// desktop navbar 
+                      style={{textDecoration: 'none', color: 'white', fontSize:'1.2rem'}}> 
                         { page } 
                     </Link> 
                     </Button>

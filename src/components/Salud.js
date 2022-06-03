@@ -8,6 +8,7 @@ import Irene from '../img/reiki-Irene-Siriczman.jpeg'
 import Alejandra from '../img/flores-maria-alejandra-petri.jpeg'
 import '../myapp.css'
 import { Footer } from './Footer'
+import BackToTop from './BackToTopAnchor'
 
 
 
@@ -48,7 +49,7 @@ const profesionales = [
     {id: 5, 
         speciality: 'Terapia Floral ( Flores de Bach )',
         name:'Alejandra Petri',
-        title: 'Terapia Floral ( Flores de Bach )',
+        title: '',
         description:'',
         avatar:  Alejandra ,
    
@@ -65,6 +66,7 @@ export const Salud = () => {
         className='salud-portrait'
         style={{marginTop:'60px', backgroundColor:'#0BB6AE'}}
         >
+            <BackToTop />
             <Grid 
             item
             xs={12}
@@ -79,7 +81,6 @@ export const Salud = () => {
             </Grid>
 
 
-            
 
         </Grid>
             

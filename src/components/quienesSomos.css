@@ -1,0 +1,34 @@
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    margin-left: 5%;
+  } 
+  
+   .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 60%;
+    width: 60%;
+    position: absolute;
+  } 
+
+  /* .quienes-grid{ 
+    /* background-image: url('../img/layered-waves-haikei.svg'); */
+    /* background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: hard-light;
+  } */
+
+  /* .quienes-grid::after{
+    opacity: 0.2;
+    background: url('../img/layered-waves-haikai-reverse.svg') no-repeat;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+  }  */

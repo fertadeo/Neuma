@@ -10,17 +10,17 @@ html, body{
     font-size: 17px !important;
 }
 .circle{
-    width:45%;
+    width:33%;
     position: absolute;
-    left: 0rem;
-    top: 2rem;
+    left: 2rem;
+    top: 4rem;
     z-index: -1;
-    transition: all ease-in-out, 2.5s;
+    transition: all ease-in-out, 2s;
 
 }
 .circle-container:hover .circle{
-    left: 20rem;
-    top: 20rem;
+    left: 10rem;
+    top: 15rem;
     width: 10%;
    
 }
@@ -38,4 +38,18 @@ background-size: cover;
 background-position: 1;
 /* background-blend-mode: hard-light; 
 filter: hue-rotate(30deg); */
+}
+
+
+
+.cursos-card {
+   
+transition-duration: 3s;
+     
+ }
+.cursos-card:hover {
+   border: rgb(101, 124, 118) 2px solid;
+    
+
+    
 }

@@ -3,6 +3,7 @@ import {Grid, Button, Box } from '@mui/material';
 import  neuma  from '../../src/img/neuma.png';
 import circle from '../../src/img/circle.png';
 import Whatsapp from './Whatsapp';
+import BackToTop from './BackToTopAnchor';
 
 
 export const Hero = () => {
@@ -21,7 +22,7 @@ export const Hero = () => {
             />
             <img 
               src={neuma} 
-              style={{width: '45vw', padding: 50}}
+              style={{width: '35vw', padding: 50}}
               alt='imagenNeuma'
             ></img>
           </Box>
@@ -31,11 +32,12 @@ export const Hero = () => {
           item
           styled={{justifyContent: 'center'}}
         >
+      <BackToTop />
           <Box style={{height:'490px', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
             <h1> INICIA TU NUEVO CAMINO  </h1>
             <h2> Somos expertos en educación Holística y Musical </h2>
           <Box style={{display:'flex', flexDirection:'row', justifyContent:'center', gap:'100px'}}>
-             <Button 
+             {/* <Button 
               variant='contained' 
               style={{color: 'white'}} 
                 > Neuma Cursos
@@ -44,11 +46,12 @@ export const Hero = () => {
               variant='contained' 
               style={{color: 'white'}} 
                 >Neuma Salud
-            </Button> 
+            </Button>  */}
           </Box>
           </Box>
           <Box style={{display: 'flex', justifyContent: 'flex-end', paddingRight: '5rem'}}>
               <Whatsapp />
+              
 
           </Box>
         </Grid>

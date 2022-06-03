@@ -1,44 +1,58 @@
 import React from 'react'
 import { Grid } from '@mui/material'
-import { Box, width } from '@mui/system'
-import Instagram from '../img/instagram.png'
-import { Link } from 'react-router-dom'
+import Instagram from '../img/IconInstagram.png'
 
 
 export const Footer = () => {
   return (
     <div>
-        <Grid className='footer-container'
+        {/* <Grid className='footer-container'
               container
               xs={12}
-              style={{width:'100%', backgroundColor:'#20C0B9', display:'flex', alignItems:'center', justifyContent:'space-around', color:'white', fontSize:'1.3rem' }}
-        >
-        
-        <Box 
-        item
-        style={{padding:'20px', }}
-        > 
-        <p > Neuma Espacio Holístico | 2022 </p>
-        
-        </Box>
-        <Box 
-        item
-        style={{padding:'20px', color:'black', fontSize:'1.3' }}
-        >
-          <p> Seguinos en</p>
+              md={6}
+              
+              >
+          
+          <div style={{width:'40%', alignItems:'center', justifyContent:'space-between', marginLeft:'5%', fontSize:'1rem'}}>
+            */}
+
+            <Grid 
+              container 
+              spacing={2}
+              style={{backgroundColor:'#20C0B9', display:'flex', alignItems:'center', justifyContent:'space-around', color:'white', fontSize:'1.3rem' }}
+              >
+            <Grid 
+              item xs={6} md={6}>
+            <p > Neuma Espacio Holístico | 2022 </p>
+            </Grid>
+            <Grid 
+            item xs={6} md={6}
+            style={{}}>
+            <p> Seguinos en nuestras redes</p>
           <a href='https://www.instagram.com/neuma_holistico/' target='_blank'> 
           <img 
             src= { Instagram }
-            style={{width:'10%'}}
+            style={{width:'5%', marginLeft:'40px'}}
             ></img>   
-          </a> 
+          </a>
+            </Grid>
+
+        
+        
+          </Grid>
+       
+       
+
+       
+      
+         
+            
         
         
         
-        </Box>
+       
 
 
-        </Grid>
     </div>
   )
 }
