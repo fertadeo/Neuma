@@ -10,10 +10,10 @@ html, body{
     font-size: 17px !important;
 }
 .circle{
-    width:33%;
+    width:28%;
     position: absolute;
-    left: 2rem;
-    top: 4rem;
+    left: 5rem;
+    top: 7rem;
     z-index: -1;
     transition: all ease-in-out, 2s;
 
@@ -24,6 +24,19 @@ html, body{
     width: 10%;
    
 }
+
+/* Hero section */
+.heroImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 27%; 
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+
 
 .salud-portrait {
 /* position: absolute; */
@@ -45,11 +58,82 @@ filter: hue-rotate(30deg); */
 .cursos-card {
    
 transition-duration: 3s;
-     
  }
-.cursos-card:hover {
-   border: rgb(101, 124, 118) 2px solid;
-    
 
-    
+.cursos-card:hover {
+   border: rgb(101, 124, 118) 2px solid;   
 }
+
+
+
+
+
+
+
+
+
+/* Mobile devices */
+@media (max-width: 480px) {
+.heroImg{
+    width: 50%;
+    align-items: center;
+ }
+
+.circle{
+    width: 10%;
+} 
+.Hero_title{
+    width: 100%;
+    text-align: center;
+
+}    
+}
+
+/* ipads, tablets  */
+@media (max-width: 768px) {
+    .heroImg{
+        min-width: 350px;
+     }
+    
+    .circle{
+        width: 10%;
+    } 
+    .Hero_title{
+        width: 100%;
+        text-align: center;
+    
+    }    
+}
+/* Media screens, laptops */
+@media (max-width: 1024px) {
+        .heroImg{
+            width: 50%;
+            align-items: center;
+         }
+        
+        .circle{
+            width: 10%;
+        } 
+        .Hero_title{
+            width: 100%;
+            text-align: center;
+        
+        }    
+}
+/* Desktops, large screens */
+
+@media (max-width: 1200px) {
+            .heroImg{
+                width: 70%;
+                align-items: center;
+             }
+            
+            .circle{
+                width: 10%;
+            } 
+            .Hero_title{
+                width: 100%;
+                text-align: center;
+            
+            }    
+} 

@@ -28,7 +28,7 @@ export const Services = () => {
         className="meditation"
         >
         </img>
-        <h3 style={{zIndex:'99'}}> Cursos Holístico</h3>
+        
      </div>
 
       <img 
