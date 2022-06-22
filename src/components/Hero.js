@@ -37,7 +37,7 @@ export const Hero = () => {
           <BackToTop />
           <Box 
             item
-            
+        
             className='Hero_title'
             style={{display: 'flex',  flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
               <h1 style={{ color: '#0BB6AE', fontSize: '2.5rem' }}> 

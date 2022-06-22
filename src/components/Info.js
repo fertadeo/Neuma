@@ -37,16 +37,17 @@ export const Info = () => {
                 
                 return (
                     <Grid 
-                    xs={4}
+                    xs={12} sm={12} md={4}
                     item
+                   
                     key={info.id}
                     >
                         <div
-                        style={{display: 'flex', flexDirection:'column', justifyContent:'center', alignItems: 'center', padding:'3rem'}}>
+                        style={{display: 'flex', flexDirection:'column', justifyContent:'center', alignItems: 'center', padding:'3rem', marginTop:'4rem'}}>
                             <img 
                                 src={info.icon} 
-                                alt='icons'
-                                style={{width:'30%'}}
+                                className='infoIcon'
+                                alt='icon'
                             ></img>
                             <h2 style={{textTransform:'uppercase', fontSize: '20px', textAlign:'center'}}>{info.title}</h2>
                         </div>

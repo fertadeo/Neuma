@@ -36,6 +36,12 @@ html, body{
     margin-top: 5%;
 }
 
+.Hero_title {
+    margin-right: 10%;
+}
+
+.infoIcon {width: 50%;
+}
 
 
 .salud-portrait {
@@ -101,39 +107,44 @@ transition-duration: 3s;
     .Hero_title{
         width: 100%;
         text-align: center;
-    
     }    
 }
 /* Media screens, laptops */
 @media (max-width: 1024px) {
         .heroImg{
-            width: 50%;
+            width: 10%;
             align-items: center;
+            justify-content: center;
+            margin-left: 35%;
+            position: relative;
          }
-        
+
         .circle{
             width: 10%;
+            margin-left: 28%;
         } 
+
+        .infoIcon {width: 50%;
+        }
+
         .Hero_title{
             width: 100%;
             text-align: center;
-        
         }    
 }
 /* Desktops, large screens */
 
 @media (max-width: 1200px) {
             .heroImg{
-                width: 70%;
+                width: 30%;
                 align-items: center;
              }
             
             .circle{
-                width: 10%;
+                width: 30%;
             } 
             .Hero_title{
                 width: 100%;
                 text-align: center;
-            
             }    
 } 
