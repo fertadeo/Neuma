@@ -66,9 +66,9 @@ filter: hue-rotate(30deg); */
 transition-duration: 3s;
  }
 
-.cursos-card:hover {
+/*.cursos-card:hover {
    border: rgb(101, 124, 118) 2px solid;   
-}
+}*/
 
 
 
@@ -148,3 +148,27 @@ transition-duration: 3s;
                 text-align: center;
             }    
 } 
+
+.servicesImg { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+
+
+}
+
+.servicesImg img {
+    max-height: 100%;
+}
+.servicesImg button{
+    background-color: aliceblue;
+    margin-top: 5%;
+    
+}
+
+.servicesImg button:hover{
+    color: aliceblue;
+    border: 2px aliceblue solid;
+}

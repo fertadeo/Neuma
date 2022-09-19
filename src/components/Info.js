@@ -2,9 +2,6 @@ import React from 'react';
 import { Grid } from '@mui/material';
 import icon1 from '../img/icon1.png';
 import icon2 from '../img/icon2.png';
-// import icon3 from '../img/icon3.png';
-// import icon4 from '../img/icon4.png';
-// import icon5 from '../img/icon5.png';
 import icon6 from '../img/icon6.png';
 
 
@@ -37,17 +34,19 @@ export const Info = () => {
                 
                 return (
                     <Grid 
-                    xs={12} sm={12} md={4}
+                    xs={12} sm={6} md={4} lg={4} xl={4}
+
                     item
                    
                     key={info.id}
                     >
                         <div
-                        style={{display: 'flex', flexDirection:'column', justifyContent:'center', alignItems: 'center', padding:'3rem', marginTop:'4rem'}}>
+                        style={{display: 'flex', flexDirection:'column', justifyContent:'center', alignItems: 'center', padding:'7rem', marginTop:'4rem'}}>
                             <img 
                                 src={info.icon} 
                                 className='infoIcon'
                                 alt='icon'
+                                
                             ></img>
                             <h2 style={{textTransform:'uppercase', fontSize: '20px', textAlign:'center'}}>{info.title}</h2>
                         </div>

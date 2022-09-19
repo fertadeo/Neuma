@@ -20,7 +20,7 @@ const InfoCursos = [
   {id: 1,
    img: Yoga , 
    name: 'Yoga',
-   subtitle: 'Curso para todo público ',
+   subtitle: 'Para todo público ',
    description: '',
    price: 'AR $3000 '
   }, 
@@ -94,19 +94,21 @@ const InfoCursos = [
                      >   
                         <Card 
                         className='cursos-card'
-                        sx={{maxWidth: 345 }}
-                        
+                        sx={{maxWidth: 345, maxHeight:500 }}
                         >
                           <CardMedia
                               component="img"
+                               
                               alt={cursos.name}
                               height="260"
                               image={ cursos.img }
                               key={cursos.id}
-                              
-                              
                               />
+                              <hr/>
                           <CardContent>
+                          <Typography variant='h6' color='primary' style={{marginLeft:'50px'}} >
+                                {cursos.price}
+                          </Typography>
                           <Typography gutterBottom variant="h5" component="div">
                             {cursos.name}
                             </Typography>
@@ -120,11 +122,10 @@ const InfoCursos = [
                   </CardContent>
                   <CardActions>
                   
-                    <Button variant='contained' size="medium" > Ver más </Button>
-                    <Typography variant='h6' color='primary' style={{marginLeft:'50px'}} >
-                                {cursos.price}
-                    </Typography>
+                    <Button variant='contained' size='large' > Ver más </Button>
+                    
                   </CardActions>
+                  
                 </Card>
                               </Grid>  
               
