@@ -44,7 +44,7 @@ export const Hero = () => {
               Yo elijo bienestar, yo elijo crecer, yo elijo Neuma  
               </h1>
               <h2> Te invitamos a ser parte de Neuma Holístico </h2>
-          <Box style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '100px' }}>
+          <Box style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '80px' }}>
               {/* <Button 
               variant='contained' 
               style={{color: 'white'}} 
