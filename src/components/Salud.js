@@ -18,7 +18,7 @@ const profesionales = [
      speciality: 'Fonoaudiología',
      name:'Daniela Ledesma',
      title: 'Licenciada en fonoaudiología (UNC) - profesora de canto lírico y popular (UPC)',
-     description:'Ledesma Daniela Belén es Licenciada en fonoaudiología especializada en el área de voz',
+     description:'Ledesma Daniela Belén es Licenciada en fonoaudiología especializada en el área de voz ,  profesora de canto recibida en el Conservatorio de Córdoba y es profesora universitaria dictando cátedras de Fonación I, II y III como así también Clínica de la Fonación en la Universidad de la Cuenca del Plata. Desarrolla un abordaje holístico en su rama médica, integrando terapias holísticas con las tradicionales. Es además profesora de yoga y meditación, ha estudiado técnicas de relajación corporal como Alexander, Feldenkraise, Eutonía y Método Rabine aplicado a profesionales de la voz. Además del área de la voz, rehabilita patologías de las áreas de odontoestomatología y lenguaje en niños. Realiza tratamiento adaptado a todas las edades. Sesiones particulares online con turno a convenir con el paciente.',
      avatar:  Daniela ,
 
     }, 
@@ -47,7 +47,7 @@ const profesionales = [
    
        },
     {id: 5, 
-        speciality: 'Terapia Floral ( Flores de Bach )',
+        speciality: 'Terapia Floral (Flores de Bach)',
         name:'Alejandra Petri',
         title: '',
         description:'',
@@ -106,6 +106,8 @@ export const Salud = () => {
 
                     <h2> {salud.speciality} </h2>
                     <p> {salud.title} </p>
+                    <p> {salud.name } </p>
+                    <p> {salud.description} </p>
                     </div>
                     <img 
                         src={salud.avatar} 
