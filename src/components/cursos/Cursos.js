@@ -12,6 +12,7 @@ import Actors from '../../img/actors.jpeg'
 import Voice from '../../img/voice.jpeg'
 import Singer from '../../img/singer.jpeg'
 import IntroAlEneagrama from '../../img/IntroAlEneagrama.jpg'
+import { Link } from 'react-router-dom';
 
 
 
@@ -21,6 +22,7 @@ const InfoCursos = [
    img: Yoga , 
    name: 'Yoga',
    subtitle: 'Para todo público ',
+   pageName: 'eneagrama',
    description: '',
    price: 'AR $3000 '
   }, 
@@ -28,6 +30,7 @@ const InfoCursos = [
     img: Actors , 
     name: 'Tu voz sos vos',
     subtitle: ' Curso para Actores ',
+    pageName: 'eneagrama',
     description: ' ',
     price: 'AR $3000 '
    },
@@ -35,6 +38,7 @@ const InfoCursos = [
     img: Singer , 
     name: 'Tu voz sos vos',
     subtitle: ' Curso para Cantantes ',
+    pageName: 'eneagrama',
     description: ' ',
     price: 'AR $3000 '
    }, 
@@ -42,12 +46,14 @@ const InfoCursos = [
     img: Voice , 
     name: 'Tu voz sos vos',
     subtitle: 'Curso para Locutores',
+    pageName: 'eneagrama',
     description: ' ',
     price: 'AR $3000 '
    }, 
    {id: 5,
     img:  IntroAlEneagrama , 
     name: 'Introducción al Eneagrama',
+    pageName: 'eneagrama',
     subtitle: '',
     description: ' ',
     price: 'AR $3000 '
@@ -122,8 +128,9 @@ const InfoCursos = [
                   </CardContent>
                   <CardActions>
                   
-                    <Button variant='contained' size='large' > Ver más </Button>
-                    
+                    <Button variant='contained' size='large' onClick={InfoCursos.pageName} > Ver más </Button>
+                    <Link to={`/cursos/${InfoCursos.pageName}`  } className="btn btn-primary">Ver mas</Link>
+                  
                   </CardActions>
                   
                 </Card>

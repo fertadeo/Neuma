@@ -1,23 +1,23 @@
+import { useState } from "react"
 import { CoursesContext } from "./CoursesContext"
 
 
-const user = {
-id: 123, 
-name: 'Fernando Tadeo',
-email: 'chachara@tadeus.com'
-}
 
 
 
 
+export function CoursesProvider({ children }) {
+     
+     const [curso, setCurso] = useState([]);
 
-export const CoursesProvider = ({ children }) => {
+     
+     
+
+
     return (
         <CoursesContext.Provider 
-        value={{
-            user 
-            }}>
-            {children}
+        value={{ curso, setCurso }}>
+            { children }
         </CoursesContext.Provider>
     )
 }

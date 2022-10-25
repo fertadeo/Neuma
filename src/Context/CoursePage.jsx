@@ -1,26 +1,32 @@
+
+import { Button } from '@mui/material';
 import { useContext } from 'react'; 
 import { CoursesContext } from './CoursesContext';
-
 
 
 export const CoursePage = () => {
 
 
-    const user  = useContext(CoursesContext);
+    const { curso, setCurso}  = useContext(CoursesContext);
 
 
     return (
-     <>
-     
-     <h1> Pagina de Curso  <small>{user?.name}</small> </h1> 
-     <hr></hr>
-     <pre>
-        {JSON.stringify( user, null, 3)}
-     </pre>
-     
-        <button className='btn btn-primary'> Establecer curso </button>
-     
-     </>
+     <div>
+    <h1> Bienvenido a la página del curso {curso?.name} </h1>
+    <hr />
+
+    <pre>
+        {JSON.stringify(curso, null, 3)}
+    </pre>
+
+
+      <Button 
+      variant="contained"
+      onClick={ () => setCurso({id: 123, titulo: 'Curso de yoga', email: 'neuma@neuma.com'}) }
+      >
+         Establecer curso  </Button>
+
+     </div>
 
 
 
